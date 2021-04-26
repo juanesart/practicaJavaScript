@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Practica Javascript</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navegacion">
+        <a href="./index.html"><img src="./img/icons8-casa-50.png" alt="Home"></a>
+    </nav>
+	<main>
+        <h1>Formulario de contacto</h1>
+		<form action="" class="formulario" id="formulario">
+			<div class="formulario__grupo" id="grupo__idNum">
+				<label for="idNum" class="formulario__label">Numero de identificación</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="idNum" id="idNum" placeholder="123456789">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Numero de identificación tiene que ser de 7 a 11 dígitos y solo puede contener numeros</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre Completo</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Celular</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3101234567">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Celular solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+            <div class="formulario__grupo" id="grupo__area">
+				<label for="area" class="formulario__label">Área/operción</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="area" id="area" placeholder="Social Media">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Área/operción solo puede contener letras y espacios.</p>
+			</div>
+
+            <div class="formulario__grupo" id="grupo__cargo">
+				<label for="cargo" class="formulario__label">Cargo</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="cargo" id="cargo" placeholder="Manager">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Cargo solo puede contener letras y espacios.</p>
+			</div>
+
+            <div class="formulario__grupo" id="grupo__ciudad">
+				<label for="ciudad" class="formulario__label">Si necesitamos contactarte telefonicamente, indicanos donde te encuentras</label>
+				<div class="formulario__grupo-input">
+					<select name="ciudad" id="ciudad" class="formulario__input">
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Bogota">Bogota</option>
+                        <option value="Medellin">Medellin</option>
+                    </select>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Cargo solo puede contener letras y espacios.</p>
+			</div>
+
+            <div class="formulario__grupo" id="grupo__time">
+				<label for="time" class="formulario__label">Horario en que te podemos contacatar</label>
+				<div class="formulario__grupo-input">
+					<input type="time" class="formulario__input" name="time" id="time" placeholder="Manager">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Por favor selecciona una hora.</p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="./js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
